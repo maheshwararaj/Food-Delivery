@@ -4,19 +4,19 @@ import axios from 'axios'
 
 export const AdminContext = createContext(null);
 const AdminContextProvider = (props) => {
-  
+    const url = "https://food-delivery-yab3.onrender.com";
     const [userCount,setUserCount] = useState(0);
     const [foodCount,setFoodCount] = useState(0)
     const fetchData = async()=>{
         
-        const response = await axios.get("http://localhost:4000/api/user/userCount")
+        const response = await axios.get(`${url}/api/user/userCount`)
         if(response.data.success)
             setUserCount(response.data.count)
 
         else
             console.log("error");
         
-        const res = await axios.get("http://localhost:4000/api/food/foodcount");
+        const res = await axios.get(`${url}/api/food/foodcount`);
         if(res.data.success)
                 setFoodCount(res.data.count);
         else 
@@ -30,6 +30,7 @@ const AdminContextProvider = (props) => {
     },[])
   
     const contextValue = {
+        url,
         userCount,
         setUserCount,
         foodCount,

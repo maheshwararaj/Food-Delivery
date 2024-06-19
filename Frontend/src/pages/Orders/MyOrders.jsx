@@ -42,7 +42,7 @@ const MyOrders = () => {
                         item.items.map((product,index)=>{
                             return(
                                 <div className="product" key={index}>
-                                    <img src={`http://localhost:4000/images/${product.image}`} alt="" />
+                                    <img src={`${url}/images/${product.image}`} alt="" />
                                     <p id='product-name'>{product.name}</p>
                                     <p>{product.quantity}</p>
                                     <p>${product.price}</p>

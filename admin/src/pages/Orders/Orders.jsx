@@ -7,7 +7,7 @@ const Orders = ({url}) => {
   
   const [orderList,setOrderList]=useState([])
   const fetchList = async ()=>{
-    const response = await axios.get("http://localhost:4000/api/order/adminOrders")
+    const response = await axios.get(`${url}/api/order/adminOrders`)
     if(response.data.success)
       setOrderList(response.data.orders)
     console.log(response.data.orders)

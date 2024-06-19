@@ -5,7 +5,7 @@ import axios from 'axios'
 export const Storecontext = createContext(null);
 
 const StoreContextProvider = (props) => {
-    const url = "http://localhost:4000"
+    const url = "https://food-delivery-yab3.onrender.com"
     const [token,setToken] = useState("")
     const [cartItems,setCartItems] = useState({});
     const [food_list,setFoodlist] = useState([])
@@ -69,7 +69,7 @@ const StoreContextProvider = (props) => {
    }
 
    const loadCartData = async (token) =>{
-    const response = await axios.post("http://localhost:4000/api/cart/get",{},{headers:{token}})
+    const response = await axios.post(`${url}/api/cart/get`,{},{headers:{token}})
    
     setCartItems(response.data.cartData);
     

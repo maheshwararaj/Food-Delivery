@@ -13,7 +13,7 @@ import Welcome from './pages/Welcome/Welcome';
 
 
 const App = () => {
-  const url = "http://localhost:4000"
+  const url = "https://food-delivery-yab3.onrender.com"
   return (
     <div className='app'>
       <ToastContainer/>
