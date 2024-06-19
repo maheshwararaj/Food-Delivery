@@ -24,7 +24,7 @@ app.use("/api/user",userRouter)
 app.use("/api/cart",cartRouter)
 app.use("/api/order",orderRouter)
 
-app.listen(port,'127.0.0.1',()=>{
+app.listen(port,'0.0.0.0',()=>{
            console.log("server running");
          })
 
