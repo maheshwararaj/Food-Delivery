@@ -1,12 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
-
 *{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: 'outfit', sans-serif;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  user-select: none;
   scroll-behavior: smooth;
+
+}
+
+ul{
+  list-style: none;
 }
 
 body::-webkit-scrollbar{
@@ -23,6 +29,13 @@ a{
   width: 80%;
   margin: auto;
 }
+
+@media (max-width:500px) {
+  .app{
+    width: 90%;
+  }
+}
+
 @keyframes  fadeIn{
   0%{
     opacity: 0;
@@ -30,4 +43,22 @@ a{
   100%{
     opacity: 1;
   }
+}
+
+.tomato-button{
+  
+  background-color: tomato;
+  color: white;
+  font-weight: 500;
+  border:1px solid transparent;
+  padding: 8px 10px;
+  border-radius: 7px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: .3s;
+}
+.tomato-button:hover{
+  background-color:white;
+  color: tomato;
+  border: 1px solid tomato;
 }

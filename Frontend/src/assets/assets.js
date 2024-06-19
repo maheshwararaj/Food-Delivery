@@ -11,7 +11,7 @@ import menu_6 from './menu_6.png'
 import menu_7 from './menu_7.png'
 import menu_8 from './menu_8.png'
 
-import food_1 from './food_1.png'
+import food_1 from './food_56.png'
 import food_2 from './food_2.png'
 import food_3 from './food_3.png'
 import food_4 from './food_4.png'
@@ -59,6 +59,7 @@ import profile_icon from './profile_icon.png'
 import bag_icon from './bag_icon.png'
 import logout_icon from './logout_icon.png'
 import parcel_icon from './parcel_icon.png'
+import profile from './profile.png'
 
 export const assets = {
     logo,
@@ -79,7 +80,8 @@ export const assets = {
     profile_icon,
     logout_icon,
     bag_icon,
-    parcel_icon
+    parcel_icon,
+    profile
 }
 
 export const menu_list = [
@@ -122,7 +124,7 @@ export const food_list = [
         name: "Greek salad",
         image: food_1,
         price: 12,
-        description: "Food provides essential nutrients for overall health and well-being",
+        description: " mix of tomatoes, cucumbers, onions, peppers, olives, and feta cheese, seasoned with olive oil, oregano, salt, and pepper",
         category: "Salad"
     },
     {
@@ -130,14 +132,14 @@ export const food_list = [
         name: "Veg salad",
         image: food_2,
         price: 18,
-        description: "Food provides essential nutrients for overall health and well-being",
+        description: "Indulge in the Mediterranean flavors with our classic Greek salad. Crisp cucumbers, juicy tomatoes, tangy red onions, and vibrant bell peppers are delicately tossed with briny Kalamata olives",
         category: "Salad"
     }, {
         _id: "3",
         name: "Clover Salad",
         image: food_3,
         price: 16,
-        description: "Food provides essential nutrients for overall health and well-being",
+        description: "Crisp, green clover leaves serve as the foundation, offering a delicate yet robust flavor.",
         category: "Salad"
     }, {
         _id: "4",
@@ -158,21 +160,21 @@ export const food_list = [
         name: "Peri Peri Rolls",
         image: food_6,
         price: 12,
-        description: "Food provides essential nutrients for overall health and well-being",
+        description: "A burst of bold and spicy flavors with our Peri Peri Rolls. Succulent chicken breast, marinated in a fiery peri peri sauce",
         category: "Rolls"
     }, {
         _id: "7",
         name: "Chicken Rolls",
         image: food_7,
         price: 20,
-        description: "Food provides essential nutrients for overall health and well-being",
+        description: "Tender chicken breast, seasoned to perfection, is carefully wrapped in a light and flaky pastry shell. Each bite offers a harmonious blend of juicy chicken.",
         category: "Rolls"
     }, {
         _id: "8",
         name: "Veg Rolls",
         image: food_8,
         price: 15,
-        description: "Food provides essential nutrients for overall health and well-being",
+        description: "Savor the wholesome goodness of our Veg Rolls, a delightful medley of vibrant vegetables wrapped in a light and crispy shell. Each roll features a colorful array of fresh carrots, crunchy bell peppers, tender spinach, and savory mushrooms.",
         category: "Rolls"
     }, {
         _id: "9",

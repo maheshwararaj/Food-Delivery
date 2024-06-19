@@ -1,0 +1,35 @@
+.users{
+    display: flex;
+    flex-direction: column;
+    
+}
+.user-list{
+    width: 100%;
+    overflow-x: scroll;
+    overflow-y: scroll;
+}
+.user-list-format{
+    display: grid;
+    grid-template-columns: 1fr 1fr 0.5fr 0.75fr;
+    min-width: 500px;
+    padding: 10px 4px;
+}
+
+.user-list-format:nth-child(odd){
+    background-color: rgb(233, 233, 233);
+}
+.user-list-format.title{
+    background-color: rgb(212, 210, 210);
+    padding: 10px;
+    font-size: 14px;
+}
+
+
+.remove{
+    cursor: pointer;
+    font-weight: 500;
+}
+.remove:hover{
+
+    color: tomato;
+}

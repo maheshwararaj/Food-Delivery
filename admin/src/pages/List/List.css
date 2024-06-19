@@ -1,0 +1,39 @@
+
+.list-table{
+    max-height: 70vh;
+    overflow-y: scroll;
+}
+
+.list-table-format{
+    padding: 15px 10px;
+    display: grid;
+    align-items: center;
+    gap: 10px;
+    grid-template-columns: 0.5fr 2fr 1fr 1fr 0.5fr;
+    font-size: 13px; 
+    border: 1px solid #e8e8e8;   
+}
+.list-table-format.title{
+    padding: 10px;
+    background-color: #e8e8e8;
+}
+.list-table-format img{
+    width: 50px;
+}
+.remove-food{
+    cursor: pointer;
+}
+.remove-food:hover{
+    color: tomato;
+    font-weight: bold;
+}
+
+@media (max-width:600px){
+    .list-table-format{
+        grid-template-columns:1fr 3fr 1fr;
+        gap:15px;
+    }
+    .list-table-format.title{
+        display: none;
+    }
+}

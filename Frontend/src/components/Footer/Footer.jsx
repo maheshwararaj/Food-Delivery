@@ -6,8 +6,8 @@ const Footer = () => {
     <div className="footer" id="footer">
         <div className="footer-content">
             <div className="footer-content-left">
-                <img src={assets.logo} alt="" />
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur delectus neque tempore, expedita saepe veritatis tempora soluta voluptatem cumque. Sint cupiditate nam nobis non culpa tempora hic, harum odio nostrum.</p>
+                <img className='footer-logo' src={assets.logo} alt="" />
+                <p>Do you feel too exhausted to cook? Are you anticipating visitors? When you are too tired to cook, have unexpected guests, or are working late, ordering food online is the wisest step. Swiggy comes to your rescue to calm your hunger pangs in less than an hour</p>
                 <div className="footer-social-icons">
                     <img src={assets.facebook_icon} alt="" />
                     <img src={assets.twitter_icon} alt="" />

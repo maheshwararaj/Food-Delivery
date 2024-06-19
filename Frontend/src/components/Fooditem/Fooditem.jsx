@@ -3,14 +3,15 @@ import React, { useContext } from "react";
 import { assets } from "../../assets/assets";
 import { Storecontext } from "../../context/Storecontext";
 import './Fooditem.css'
-const Fooditem = ({ id, name, price, description, image }) => {
+const Fooditem = ({ id, name, price, description, image, cat }) => {
 
   
-    const {cartItems,addToCart,removeFromCart} = useContext(Storecontext)
+    const {cartItems,addToCart,removeFromCart,url} = useContext(Storecontext)
+    description = description.length > 80 ? description.substring(0,80)+".." : description;
   return (
-    <div className="food-item">
+    <div className="food-item" >
       <div className="food-item-image-container">
-        <img className="food-item-image" src={image} alt={name} />
+        <img className="food-item-image" src={url+"/images/"+image} alt={name} />
         {!cartItems[id] ? <img className='add' src={assets.add_icon_white} onClick={()=>addToCart(id)} alt=""/> 
             : <div className="food-item-counter">
                 <img onClick={()=>removeFromCart(id)} src={assets.remove_icon_red} alt="" />
@@ -25,7 +26,8 @@ const Fooditem = ({ id, name, price, description, image }) => {
           <img src={assets.rating_starts} alt="" />
         </div>
         <p className="food-item-desc">{description}</p>
-        <p className="food-item-price">${price}</p>
+        <p className="food-item-price">${price} <span className="old-price">${price+3}</span></p>
+
       </div>
     </div>
   );
