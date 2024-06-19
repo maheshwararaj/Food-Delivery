@@ -2,13 +2,12 @@ import React, { useContext } from 'react'
 import './Welcome.css'
 import {assets} from '../../assets/assets.js'
 import { AdminContext } from '../../Context/AdminContext.jsx'
-import Fade from 'react-reveal/'
 const Welcome = () => {
     const {userCount,foodCount} = useContext(AdminContext)
 
    
   return (
-    <Fade>
+ 
     <div className='welcome add'>
         <h1>Welcome Back Admin!</h1>
         <div className="analysis">
@@ -42,7 +41,7 @@ const Welcome = () => {
             </div>
         </div>
     </div>
-    </Fade>
+
   )
 }
 
